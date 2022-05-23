@@ -60,9 +60,10 @@ function SupplierTable() {
 
         <div>
             <input type='text' onChange={(e) => searchName(e.target.value)} placeholder="Search by name..." />
+        </div>
+        <div>
             <button onClick={() => orderBy()}>Order By</button>
             <button onClick={() => orderByDesc()}>Order By Desc</button>
-            <button onClick={() => loadData()}>Load Data</button>
         </div>
         <table>
             <tr>
@@ -100,6 +101,7 @@ function SupplierTable() {
         </table>
         <div>
             <button onClick={() => removeAll()}>Remove All</button>
+            <button onClick={() => loadData()}>Load Data</button>
         </div>
     </>
     )
